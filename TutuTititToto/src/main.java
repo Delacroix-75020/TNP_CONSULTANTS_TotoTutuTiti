@@ -4,9 +4,9 @@ import java.util.Scanner;
 class main {
     public static String parserChaine(int nombre) {
 
-        StringBuilder res = new StringBuilder();
+        StringBuilder res = new StringBuilder(); // objet qui permet la construction d'une chaine de caractéres 
 
-        if (nombre % 3 == 0) {
+        if (nombre % 3 == 0) { // utilisation de l'operateur modulo %
             res.append("Toto");
             System.out.println("il est divisible par 3");
             System.out.println("----------------------");
@@ -22,7 +22,7 @@ class main {
             System.out.println("----------------------");
         }
 
-        for (int i = 0; i < String.valueOf(nombre).length(); i++) {
+        for (int i = 0; i < String.valueOf(nombre).length(); i++) { // boucle qui permet de lire le nombre de caracteres dans une chaine
             if (String.valueOf(nombre).charAt(i) == '3') res.append("Toto");
         }
 
@@ -42,7 +42,7 @@ class main {
     }
 
     public static void main(String[] argv) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // Class qui permet de recuperer les informations tapé par l'utilisateurs 
         System.out.println("Bienvenue sur le programme");
         System.out.println("----------------------------------------");
         System.out.println("veuillez entrer un nombre");
